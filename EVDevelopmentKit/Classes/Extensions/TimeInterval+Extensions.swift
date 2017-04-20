@@ -1,6 +1,6 @@
 import Foundation
 
-extension TimeInterval {
+public extension TimeInterval {
   
   typealias HoursMinutesSeconds = (hours: Double, minutes: Double, seconds: Double)
   

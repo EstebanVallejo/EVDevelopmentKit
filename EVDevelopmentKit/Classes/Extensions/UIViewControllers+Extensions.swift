@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
   
   var isFirstInStack : Bool {
     get {
@@ -34,7 +34,7 @@ extension UIViewController {
   
 }
 
-extension UIViewController {
+public extension UIViewController {
   
   func hasNavigationController() -> Bool {
     return navigationController != nil

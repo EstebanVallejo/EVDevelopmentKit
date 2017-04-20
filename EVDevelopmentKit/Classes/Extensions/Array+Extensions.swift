@@ -1,6 +1,6 @@
 import Foundation
 
-extension Array {
+public extension Array {
   var randomElement: Element? {
     get {
       guard isEmpty == false else { return nil }
@@ -22,7 +22,7 @@ extension Array {
   }
 }
 
-extension Array where Element : Equatable {
+public extension Array where Element : Equatable {
   mutating func removeObject(object : Element, onlyFirst: Bool = false) {
     if let index = index(of: object) {
       remove(at: index)

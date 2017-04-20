@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-enum AVAudioSessionCategory {
+public enum AVAudioSessionCategory {
   
   case ambient
   case soloAmbient

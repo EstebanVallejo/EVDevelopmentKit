@@ -1,7 +1,7 @@
 import UIKit
 import ObjectiveC
 
-extension UITextField {
+public extension UITextField {
   
   @IBInspectable var placeHolderColor: UIColor? {
     get { return self.placeHolderColor }
@@ -17,7 +17,7 @@ fileprivate var nextTextFieldAssociationKey: UInt8 = 1
 fileprivate var toolbarAssociationKey: UInt8 = 2
 
 //MARK: Properties
-extension UITextField {
+public extension UITextField {
   var previousTextField : UITextField? {
     get {
       return objc_getAssociatedObject(self, &previousTextFieldAssociationKey) as? UITextField

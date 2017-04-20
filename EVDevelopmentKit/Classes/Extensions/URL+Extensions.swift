@@ -1,6 +1,6 @@
 import Foundation
 
-extension URL {
+public extension URL {
   
   static var cachesDirectory: URL {
     return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
   
   static func timeAgoSince(date: Date, numericDates: Bool = false) -> String {
     return date.timeAgo(numericDates: numericDates)

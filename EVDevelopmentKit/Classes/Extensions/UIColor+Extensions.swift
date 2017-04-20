@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIColor {
+public extension UIColor {
   convenience init(r: Int, g: Int, b: Int, a: Float = 1) {
     let red = CGFloat(min(abs(r), 255)) / 255
     let green = CGFloat(min(abs(g), 255)) / 255

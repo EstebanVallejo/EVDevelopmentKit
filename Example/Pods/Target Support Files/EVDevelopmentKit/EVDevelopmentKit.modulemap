@@ -1,0 +1,6 @@
+framework module EVDevelopmentKit {
+  umbrella header "EVDevelopmentKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

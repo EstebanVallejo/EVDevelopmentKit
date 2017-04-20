@@ -1,7 +1,7 @@
 import Foundation
 import CoreLocation
 
-extension CLLocationCoordinate2D {
+public extension CLLocationCoordinate2D {
   
   public typealias coordinateComponentRange = (min: Double, max: Double)
   

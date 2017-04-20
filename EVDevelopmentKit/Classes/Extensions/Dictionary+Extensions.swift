@@ -1,6 +1,6 @@
 import Foundation
 
-extension Dictionary {
+public extension Dictionary {
   
   public func removeNulls() -> Dictionary {
     var dict = self
@@ -30,7 +30,7 @@ extension Dictionary {
   
 }
 
-extension Dictionary {
+public extension Dictionary {
   
   public static func from(plist: String) -> Dictionary? {
     guard let fileUrl = Bundle.main.url(forResource: plist, withExtension: "plist"),

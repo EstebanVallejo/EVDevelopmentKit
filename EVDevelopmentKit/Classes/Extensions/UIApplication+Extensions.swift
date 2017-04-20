@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
   
   class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
     if let nav = base as? UINavigationController {
@@ -19,7 +19,7 @@ extension UIApplication {
   
 }
 
-extension UIApplication {
+public extension UIApplication {
   
   enum AppLinkOpenService {
     case Browser, iTunes, AppStore

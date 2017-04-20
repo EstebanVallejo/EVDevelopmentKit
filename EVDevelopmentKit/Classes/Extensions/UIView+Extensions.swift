@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIView {
+public extension UIView {
   public var x: CGFloat {
     get { return origin.x }
     set { origin = CGPoint(x: newValue, y: y) }
@@ -33,7 +33,7 @@ extension UIView {
   
 }
 
-extension UIView {
+public extension UIView {
   
   @IBInspectable public var cornerRadius: CGFloat {
     set {
@@ -63,7 +63,7 @@ extension UIView {
   
 }
 
-extension UIView {
+public extension UIView {
   
   public var hypotenuse: CGFloat {
     return sqrt(pow(width, 2) + pow(height, 2))
@@ -71,7 +71,7 @@ extension UIView {
   
 }
 
-extension UIView {
+public extension UIView {
   
   public func rounded(updateLayout layoutIfNeeded: Bool = true) {
     if layoutIfNeeded { self.layoutIfNeeded() }
@@ -85,7 +85,7 @@ extension UIView {
 
 }
 
-extension UIView {
+public extension UIView {
   
   public func takeSnapshot() -> UIImage? {
     UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)

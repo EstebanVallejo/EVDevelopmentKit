@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIImage {
+public extension UIImage {
   
   public class func with(color: UIColor!) -> UIImage! {
     let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
@@ -18,7 +18,7 @@ extension UIImage {
   
 }
 
-extension UIImage {
+public extension UIImage {
   
   public enum Format {
     case png
@@ -60,7 +60,7 @@ extension UIImage {
   
 }
 
-extension UIImage {
+public extension UIImage {
   
   // colorize image with given tint color
   // this is similar to Photoshop's "Color" layer blend mode

@@ -1,6 +1,6 @@
 import Foundation
 
-enum AppInfo {
+public enum AppInfo {
   
   static var version: String? {
     return Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String

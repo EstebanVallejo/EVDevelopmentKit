@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIEdgeInsets {
+public extension UIEdgeInsets {
   
   init(uniform value: CGFloat) {
     left = value
