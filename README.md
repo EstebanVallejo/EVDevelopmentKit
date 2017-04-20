@@ -1,15 +1,15 @@
 # EVDevelopmentKit
 
-[![CI Status](http://img.shields.io/travis/Esteban Vallejo/EVDevelopmentKit.svg?style=flat)](https://travis-ci.org/Esteban Vallejo/EVDevelopmentKit)
+[![CI Status](http://img.shields.io/travis/EstebanVallejo/EVDevelopmentKit.svg?style=flat)](https://travis-ci.org/EstebanVallejo/EVDevelopmentKit)
 [![Version](https://img.shields.io/cocoapods/v/EVDevelopmentKit.svg?style=flat)](http://cocoapods.org/pods/EVDevelopmentKit)
 [![License](https://img.shields.io/cocoapods/l/EVDevelopmentKit.svg?style=flat)](http://cocoapods.org/pods/EVDevelopmentKit)
 [![Platform](https://img.shields.io/cocoapods/p/EVDevelopmentKit.svg?style=flat)](http://cocoapods.org/pods/EVDevelopmentKit)
 
 ## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+There is no example proyect as this pod is used as hub of many utility classes and extensions.
 
 ## Requirements
+iOS 9.0 or higher
 
 ## Installation
 
@@ -17,12 +17,12 @@ EVDevelopmentKit is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "EVDevelopmentKit"
+pod 'EVDevelopmentKit', :git => 'https://github.com/EstebanVallejo/EVDevelopmentKit.git'
 ```
 
 ## Author
 
-Esteban Vallejo, esteban@infinixsoft.com
+Esteban Vallejo, esteb.vallejo@gmail.com.com
 
 ## License
 
