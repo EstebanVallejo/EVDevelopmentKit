@@ -1,0 +1,6 @@
+use_frameworks!
+target 'EVDevelopmentKit_Tests' do
+  pod 'EVDevelopmentKit', :path => '../'
+  
+  
+end
