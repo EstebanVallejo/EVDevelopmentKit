@@ -17,7 +17,7 @@ EVDevelopmentKit is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'EVDevelopmentKit', :git => 'https://github.com/EstebanVallejo/EVDevelopmentKit.git'
+pod 'EVDevelopmentKit'
 ```
 
 ## Author
