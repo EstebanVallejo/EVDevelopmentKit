@@ -22,7 +22,7 @@ pod 'EVDevelopmentKit'
 
 ## Author
 
-Esteban Vallejo, esteb.vallejo@gmail.com.com
+Esteban Vallejo, esteb.vallejo@gmail.com
 
 ## License
 
