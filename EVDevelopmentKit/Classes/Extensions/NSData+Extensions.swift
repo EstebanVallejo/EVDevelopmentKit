@@ -1,7 +1,7 @@
 import Foundation
 
 public extension NSData {
-  func stringFromDeviceToken() -> String! {
+  public func stringFromDeviceToken() -> String! {
     
     var bytes = [UInt8](repeating: 0, count: self.length)
     self.getBytes(&bytes, length: bytes.count)

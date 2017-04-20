@@ -21,7 +21,7 @@ public extension CLLocationCoordinate2D {
     return self.init(coord: center, distance: randomDistance, bearingDegrees: randomDegrees)
   }
   
-  init(coord: CLLocationCoordinate2D, distance: Double, bearingDegrees: Double) {
+  public init(coord: CLLocationCoordinate2D, distance: Double, bearingDegrees: Double) {
     
     func radiansFrom(degrees: Double) -> Double {
       return degrees * (.pi / 180)

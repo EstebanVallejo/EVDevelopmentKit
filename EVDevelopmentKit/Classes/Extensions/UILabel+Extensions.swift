@@ -10,7 +10,7 @@ import UIKit
 
 public extension UILabel {
   
-  func isTruncated() -> Bool {
+  public func isTruncated() -> Bool {
     
     if let string = self.text {
       

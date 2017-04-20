@@ -2,7 +2,7 @@ import UIKit
 
 public extension UIViewController {
   
-  var isFirstInStack : Bool {
+  public var isFirstInStack : Bool {
     get {
       guard let indexInStack = indexInNavigationStack else {
         return false
@@ -12,7 +12,7 @@ public extension UIViewController {
     }
   }
   
-  var isPresented : Bool {
+  public var isPresented : Bool {
     get { return presentingViewController != nil }
   }
   
@@ -36,11 +36,11 @@ public extension UIViewController {
 
 public extension UIViewController {
   
-  func hasNavigationController() -> Bool {
+  public func hasNavigationController() -> Bool {
     return navigationController != nil
   }
   
-  var indexInNavigationStack: Int? {
+  vpublic ar indexInNavigationStack: Int? {
     guard hasNavigationController() else {
       return nil
     }

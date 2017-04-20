@@ -3,7 +3,7 @@ import ObjectiveC
 
 public extension UITextField {
   
-  @IBInspectable var placeHolderColor: UIColor? {
+  @IBInspectable public var placeHolderColor: UIColor? {
     get { return self.placeHolderColor }
     set {
       self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSForegroundColorAttributeName: newValue!])
@@ -18,7 +18,7 @@ fileprivate var toolbarAssociationKey: UInt8 = 2
 
 //MARK: Properties
 public extension UITextField {
-  var previousTextField : UITextField? {
+  public var previousTextField : UITextField? {
     get {
       return objc_getAssociatedObject(self, &previousTextFieldAssociationKey) as? UITextField
     }
@@ -28,7 +28,7 @@ public extension UITextField {
     }
   }
   
-  var nextTextField : UITextField? {
+  public var nextTextField : UITextField? {
     get {
       return objc_getAssociatedObject(self, &nextTextFieldAssociationKey) as? UITextField
     }
@@ -53,13 +53,13 @@ public extension UITextField {
 }
 
 //MARK: Public methods
-extension UITextField {
-  func set(previousTextField: UITextField?, nextTextField: UITextField?) {
+public extension UITextField {
+  public func set(previousTextField: UITextField?, nextTextField: UITextField?) {
     self.previousTextField = previousTextField
     self.nextTextField = nextTextField
   }
   
-  func addNavigationButtons() {
+  public func addNavigationButtons() {
     var mutItems = [UIBarButtonItem]()
     
     let leftSpacing = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
@@ -92,7 +92,7 @@ extension UITextField {
     inputAccessoryView = toolbar
   }
   
-  static func chain(textFields: [UITextField]?) {
+  public static func chain(textFields: [UITextField]?) {
     guard let textFields = textFields, textFields.isEmpty == false else { return }
     
     if textFields.count == 1 {

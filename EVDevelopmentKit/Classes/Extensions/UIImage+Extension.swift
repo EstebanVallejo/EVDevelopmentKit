@@ -66,7 +66,7 @@ public extension UIImage {
   // this is similar to Photoshop's "Color" layer blend mode
   // this is perfect for non-greyscale source images, and images that have both highlights and shadows that should be preserved
   // white will stay white and black will stay black as the lightness of the image is preserved
-  func tint(tintColor: UIColor) -> UIImage {
+  public func tint(tintColor: UIColor) -> UIImage {
     
     return modifiedImage { context, rect in
       // draw black background - workaround to preserve color of partially transparent pixels
@@ -91,7 +91,7 @@ public extension UIImage {
   
   // fills the alpha channel of the source image with the given color
   // any color information except to the alpha channel will be ignored
-  func fillAlpha(fillColor: UIColor) -> UIImage {
+  public func fillAlpha(fillColor: UIColor) -> UIImage {
     
     return modifiedImage { context, rect in
       // draw tint color

@@ -2,7 +2,7 @@ import UIKit
 
 public extension UIApplication {
   
-  class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+  public class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
     if let nav = base as? UINavigationController {
       return topViewController(base: nav.visibleViewController)
     }
@@ -21,7 +21,7 @@ public extension UIApplication {
 
 public extension UIApplication {
   
-  enum AppLinkOpenService {
+  public enum AppLinkOpenService {
     case Browser, iTunes, AppStore
     
     var prefix: String {
@@ -33,7 +33,7 @@ public extension UIApplication {
     }
   }
   
-  func openAppLink(appName: String, appId: String, service: AppLinkOpenService = .AppStore) -> Bool {
+  public func openAppLink(appName: String, appId: String, service: AppLinkOpenService = .AppStore) -> Bool {
     
     let stringUrl = service.prefix + "itunes.apple.com/app/" + appName + "/id" + appId + "?mt=8"
     if let url = URL(string: stringUrl), canOpenURL(url) == true {

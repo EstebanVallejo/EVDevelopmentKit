@@ -10,11 +10,11 @@ import Foundation
 
 public extension Date {
   
-  static func timeAgoSince(date: Date, numericDates: Bool = false) -> String {
+  public static func timeAgoSince(date: Date, numericDates: Bool = false) -> String {
     return date.timeAgo(numericDates: numericDates)
   }
   
-  func timeAgo(numericDates: Bool = false) -> String {
+  public func timeAgo(numericDates: Bool = false) -> String {
     let calendar = NSCalendar.current
     let unitFlags: Set<Calendar.Component> = [.minute, .hour, .day, .weekOfYear, .month, .year, .second]
     let now = Date()
