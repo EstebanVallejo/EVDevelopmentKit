@@ -40,7 +40,7 @@ public extension UIViewController {
     return navigationController != nil
   }
   
-  vpublic ar indexInNavigationStack: Int? {
+  public var indexInNavigationStack: Int? {
     guard hasNavigationController() else {
       return nil
     }

@@ -20,11 +20,11 @@ public enum AVAudioSessionCategory {
   var rawValue: String {
     
     switch self {
-    case .ambient: return AVAudioSessionCategoryAmbient
-    case .soloAmbient: return AVAudioSessionCategorySoloAmbient
-    case .playAndRecord: return AVAudioSessionCategoryPlayAndRecord
-    case .playback: return AVAudioSessionCategoryPlayback
-    case .record: return AVAudioSessionCategoryRecord
+    case .ambient: return AVAudioSession.Category.ambient.rawValue
+    case .soloAmbient: return AVAudioSession.Category.soloAmbient.rawValue
+    case .playAndRecord: return AVAudioSession.Category.playAndRecord.rawValue
+    case .playback: return AVAudioSession.Category.playback.rawValue
+    case .record: return AVAudioSession.Category.record.rawValue
     }
     
   }

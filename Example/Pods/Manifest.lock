@@ -1,16 +1,16 @@
 PODS:
-  - EVDevelopmentKit (0.1.0)
+  - EVDevelopmentKit (0.1.1)
 
 DEPENDENCIES:
   - EVDevelopmentKit (from `../`)
 
 EXTERNAL SOURCES:
   EVDevelopmentKit:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  EVDevelopmentKit: 2a516a8b997024f26b1eb6245e5ad4846f2382c3
+  EVDevelopmentKit: 25a7dc1e18403049e5755febfef8ac0fb9b032c2
 
 PODFILE CHECKSUM: aade0af695c79a86a5dd9419e5654a1f84d46e12
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.10.1

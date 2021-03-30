@@ -3,10 +3,7 @@ import UIKit
 public extension UIEdgeInsets {
   
   public init(uniform value: CGFloat) {
-    left = value
-    right = value
-    top = value
-    bottom = value
+    self.init(top: value, left: value, bottom: value, right: value)
   }
   
 }
