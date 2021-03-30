@@ -22,7 +22,7 @@ public extension UIColor {
     
     let hexColor = hexString.substring(from: start)
     
-    let hexCharCount = hexColor.characters.count
+    let hexCharCount = hexColor.count
     if  hexCharCount != 6 && hexCharCount != 8 {
       print("Invalid HexString format")
       return nil

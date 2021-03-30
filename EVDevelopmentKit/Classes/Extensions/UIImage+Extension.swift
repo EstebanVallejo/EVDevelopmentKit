@@ -44,14 +44,14 @@ public extension UIImage {
   }
   
   public func asPNG() -> Data {
-    guard let pngRepresentation = UIImagePNGRepresentation(self) else {
+    guard let pngRepresentation = pngData() else {
       fatalError("Cant get PNG Representation")
     }
     return pngRepresentation
   }
   
   public func asJPEG(with compressionQuality: CGFloat = 1.0) -> Data {
-    guard let jpegRepresentation = UIImageJPEGRepresentation(self, max(min(compressionQuality, 1.0), 0.0)) else {
+    guard let jpegRepresentation = jpegData(compressionQuality: max(min(compressionQuality, 1.0), 0.0)) else {
       fatalError("Cant get JPEG Representation")
     }
     

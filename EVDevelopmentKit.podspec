@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name              = 'EVDevelopmentKit'
-  s.version           = '0.1.1'
+  s.version           = '0.1.2'
   s.summary           = 'A bunch of useful things to use in many projects.'
 
   s.description       = <<-DESC
